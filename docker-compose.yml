@@ -1,0 +1,25 @@
+version: "3.9"
+
+networks:
+  default-auto-task-net:
+    driver: bridge
+
+services:
+  # Backend
+  backend:
+    image: auto-task-prod:1.0.0
+    build: ./
+    restart: always
+    tty: true
+    ports:
+      - "${PORT}:5000"
+    networks:
+      - default-auto-task-net
+    environment:
+      - NODE_ENV=prod
+    volumes:
+      - ./.env.prod:/app/.env.prod
+      - ./logs:/app/logs
+    command: node dist/main
+    env_file:
+      - .env

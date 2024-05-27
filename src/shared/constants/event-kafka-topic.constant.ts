@@ -1,0 +1,3 @@
+export const SALE_CENTER = {
+  TRIGGER_ORDER: 'SALE_CENTER.TRIGGER_ORDER',
+};

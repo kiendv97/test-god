@@ -1,0 +1,12 @@
+Dockerfile
+.dockerignore
+.pm2
+.git
+node_modules
+logs
+dist
+docker-data
+docker
+test
+upload
+deploy

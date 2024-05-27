@@ -1,0 +1,11 @@
+export enum ActionType {
+  CALL0,
+  SMS,
+  CREATE_CUSTOMER,
+  BLOCK_AUTOMATION,
+  OTHER,
+  CREATE_ORDER,
+  CLOSE_CHAIN,
+  CHANGE_ACTION,
+  ADD_CHAIN,
+}
